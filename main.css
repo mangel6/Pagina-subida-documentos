@@ -1,0 +1,33 @@
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #333; /* Cambia el color de fondo según tu preferencia */
+    color: #fff; /* Cambia el color de texto según tu preferencia */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px; /* Espaciado entre elementos del menú */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Cambia el color de enlace al pasar el cursor sobre él */
+nav ul li a:hover {
+    color: #ff9900; /* Color de resaltado al pasar el cursor */
+}

@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Subir y Descargar Documentos</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
 </head>
-<body>   
     <header>
         <nav class="navbar navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
@@ -30,23 +29,12 @@
             </div>
             </nav>
     </header>
-    <hr>
-    <br>
-    <h1 style="text-align: center">Descargar Documentos</h1>
-    <a id="downloadLink" style="display:none">Descargar Documento</a>
-    <table class="table table-dark table-centered">
-        <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">Nombre</th>
-                <th scope="col">Fecha</th>
-                <th scope="col">Descargar</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php include 'listado.php'; ?>
-        </tbody>
-    </table>
-
+<hr>
+<body>
+    <br><br>
+    <form action="subida.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="fileInput">
+        <input type="submit" value="Cargar Documento">
+    </form>
 </body>
 </html>
